@@ -69,35 +69,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _services_corona_api_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/corona-api.service */ "./src/app/services/corona-api.service.ts");
-/* harmony import */ var primeng_treetable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/treetable */ "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-treetable.js");
-/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/api */ "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-api.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var primeng_treetable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/treetable */ "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-treetable.js");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/api */ "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-api.js");
 
 
 
 
 
 
-function AppComponent_ng_template_16_Template(rf, ctx) { if (rf & 1) {
+function AppComponent_ng_template_22_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "country");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Country");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "confirmed");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Total Confirmed");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "recovered");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Total Recovered");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "th");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "deaths");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Total Deaths");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "New confirmed");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "New recovered");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "th");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "New deaths");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function AppComponent_ng_template_17_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr");
+function AppComponent_ng_template_23_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "p-treeTableToggler", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "p-treeTableToggler", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "td");
@@ -109,10 +118,20 @@ function AppComponent_ng_template_17_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const rowNode_r2 = ctx.$implicit;
     const rowData_r3 = ctx.rowData;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ttSelectableRow", rowNode_r2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("rowNode", rowNode_r2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -123,6 +142,12 @@ function AppComponent_ng_template_17_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.recovered);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.deaths);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.confirmed - (rowData_r3.prev == null ? null : rowData_r3.prev.confirmed));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.recovered - (rowData_r3.prev == null ? null : rowData_r3.prev.recovered));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.deaths - (rowData_r3.prev == null ? null : rowData_r3.prev.deaths));
 } }
 // export interface TreeNode {
 //   data?: any;
@@ -165,108 +190,197 @@ class AppComponent {
             console.log(brief);
             this.brief = brief;
         });
-        this.coronaApi.timeseries().subscribe(val => {
-            console.log(val);
+        let prev = [];
+        this.coronaApi.timeseries().subscribe((result) => {
+            prev = result.map(country => {
+                let lastDate = 0;
+                let prevDate = 0;
+                let lastDateString;
+                let prevData;
+                let lastdata;
+                // tslint:disable-next-line:forin
+                for (const seriesEl in country.timeseries) {
+                    const date1 = Date.parse(seriesEl);
+                    if (date1 > lastDate) {
+                        lastDate = date1;
+                        prevDate = lastDate;
+                        prevData = lastdata;
+                        lastDateString = seriesEl;
+                        lastdata = country.timeseries[seriesEl];
+                        // console.log('last', lastDateString, lastdata);
+                    }
+                }
+                return {
+                    countryregion: country.countryregion,
+                    data: prevData
+                };
+            });
+            // console.log('prev', prev);
+            this.coronaApi.latest().subscribe((values) => {
+                const countries = [];
+                const valuesRef = JSON.parse(JSON.stringify(values));
+                this.lastest = values.sort((a, b) => b.confirmed - a.confirmed);
+                for (let i = 0; i < this.lastest.length - 1; i++) {
+                    const country = this.findCountryInTree(this.valueTree, this.lastest[i].countryregion);
+                    if (country) {
+                        const temp = {
+                            data: {
+                                countryregion: this.lastest[i].provincestate,
+                                recovered: this.lastest[i].recovered,
+                                deaths: this.lastest[i].deaths,
+                                confirmed: this.lastest[i].confirmed
+                            },
+                            expanded: false,
+                            label: this.lastest[i].countryregion,
+                            children: []
+                        };
+                        country.children.push(temp);
+                        // console.log(country.data);
+                        country.data.confirmed += this.lastest[i].confirmed;
+                        country.data.deaths += this.lastest[i].deaths;
+                        country.data.recovered += this.lastest[i].recovered;
+                    }
+                    else {
+                        const element = JSON.parse(JSON.stringify(this.lastest[i]));
+                        const inPrev = prev.find(c => c.countryregion === element.countryregion);
+                        // countryregion: "Thailand"
+                        // data:
+                        // confirmed: 2
+                        // deaths: 0
+                        // recovered: 0
+                        const temp = {
+                            data: {
+                                provincestate: element.provincestate,
+                                countryregion: element.countryregion,
+                                recovered: element.recovered,
+                                deaths: element.deaths,
+                                confirmed: element.confirmed,
+                                countrycode: Object.assign({}, element.countrycode),
+                                prev: Object.assign({}, inPrev.data)
+                            },
+                            expanded: false,
+                            label: element.countryregion,
+                            children: []
+                        };
+                        // console.log(temp);
+                        this.valueTree[0].children.push(temp);
+                    }
+                }
+                this.valueTree = this.valueTree[0].children;
+            });
         });
-        this.coronaApi.latest().subscribe((values) => {
-            // console.log(values);
-            const countries = [];
-            const valuesRef = JSON.parse(JSON.stringify(values));
-            this.lastest = values;
-            // this.lastest = values.slice(0, 10);
-            for (let i = 0; i < this.lastest.length - 1; i++) {
-                const country = this.findCountryInTree(this.valueTree, this.lastest[i].countryregion);
-                if (country) {
-                    const temp = {
-                        data: {
-                            countryregion: this.lastest[i].provincestate,
-                            recovered: this.lastest[i].recovered,
-                            deaths: this.lastest[i].deaths,
-                            confirmed: this.lastest[i].confirmed
-                        },
-                        expanded: false,
-                        label: this.lastest[i].countryregion,
-                        children: []
-                    };
-                    country.children.push(temp);
-                    // console.log(country.data);
-                    country.data.confirmed += this.lastest[i].confirmed;
-                    country.data.deaths += this.lastest[i].deaths;
-                    country.data.recovered += this.lastest[i].recovered;
-                }
-                else {
-                    const element = JSON.parse(JSON.stringify(this.lastest[i]));
-                    const temp = {
-                        data: {
-                            provincestate: element.provincestate,
-                            countryregion: element.countryregion,
-                            recovered: element.recovered,
-                            deaths: element.deaths,
-                            confirmed: element.confirmed
-                        },
-                        expanded: true,
-                        label: element.countryregion,
-                        children: []
-                    };
-                    this.valueTree[0].children.push(temp);
-                }
+    }
+    nodeSelect(event) {
+        const country = event.node.data.countrycode.iso2;
+        console.log(country);
+        this.coronaApi.timeseries(country).subscribe(result => {
+            console.log(result);
+            const series = result[0].timeseries;
+            const confirmed = [];
+            const recovered = [];
+            const deaths = [];
+            const xAxis = [];
+            // tslint:disable-next-line: forin
+            for (const el in series) {
+                console.log(series[el], el);
+                confirmed.push(series[el].confirmed);
+                recovered.push(series[el].recovered);
+                deaths.push(series[el].deaths);
+                xAxis.push(el);
+                const elDate = Date.parse(el);
             }
-            this.valueTree = this.valueTree[0].children;
-            // setTimeout(() => {
-            //   this.valueTree = Object.assign({}, this.valueTree);
-            // }, 1);
-            // console.log(JSON.stringify(this.valueTree));
+            const plotEl = document.getElementById('history-plot');
+            const d = [{
+                    x: xAxis,
+                    y: confirmed,
+                    type: 'scatter',
+                    name: 'Confirmed',
+                }, {
+                    x: xAxis,
+                    y: recovered,
+                    type: 'scatter',
+                    name: 'Recovered'
+                },
+                {
+                    x: xAxis,
+                    y: deaths,
+                    type: 'scatter',
+                    name: 'Deaths',
+                }];
+            const layout = {
+                title: event.node.data.countryregion,
+                xaxis: {
+                    title: 'Time',
+                    showgrid: false,
+                    zeroline: false
+                },
+                yaxis: {
+                    title: '#',
+                    showline: false
+                }
+            };
+            const config = {
+                responsive: true,
+                displayModeBar: false
+            };
+            Plotly.newPlot(plotEl, d, layout, config);
         });
-        // this.coronaApi.sample().subscribe((val: any) => {
-        //   console.log(val);
-        //   this.sample = val.data;
-        //   console.log(JSON.stringify(this.sample));
-        // });
+    }
+    nodeUnselect(event) {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_corona_api_service__WEBPACK_IMPORTED_MODULE_1__["CoronaApiService"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 19, vars: 4, consts: [[1, "container-fluid"], [1, "row"], [1, "col-6", "mb-2"], [1, "card"], [1, "card-header", "bg-dark", "text-light"], [1, "card-body"], [1, "card-subtitle", "mb-2"], [3, "value"], ["pTemplate", "header"], ["pTemplate", "body"], [3, "rowNode"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 24, vars: 7, consts: [[1, "container-fluid", "bg-dark"], [1, "row"], [1, "col-12", "mb-2"], [1, "first-row"], [1, "card"], [1, "card-header", "bg-dark", "text-light"], [1, "card-body"], [1, "card-subtitle", "mb-2"], [1, "card", "plot"], ["id", "history-plot"], ["selectionMode", "single", "dataKey", "countryregion", "scrollHeight", "600px", 3, "value", "selection", "autoLayout", "scrollable", "selectionChange", "onNodeSelect", "onNodeUnselect"], ["pTemplate", "header"], ["pTemplate", "body"], [3, "ttSelectableRow"], [3, "rowNode"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " CORONA VIRUS OUTBREAK ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " CORONA VIRUS OUTBREAK ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h6", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "h6", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h6", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h6", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "h6", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "h6", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p-treeTable", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, AppComponent_ng_template_16_Template, 9, 0, "ng-template", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, AppComponent_ng_template_17_Template, 10, 5, "ng-template", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Click on a country to see historical trend ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "div", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "p-treeTable", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("selectionChange", function AppComponent_Template_p_treeTable_selectionChange_21_listener($event) { return ctx.selectedNode = $event; })("onNodeSelect", function AppComponent_Template_p_treeTable_onNodeSelect_21_listener($event) { return ctx.nodeSelect($event); })("onNodeUnselect", function AppComponent_Template_p_treeTable_onNodeUnselect_21_listener($event) { return ctx.nodeUnselect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, AppComponent_ng_template_22_Template, 15, 0, "ng-template", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, AppComponent_ng_template_23_Template, 16, 9, "ng-template", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Confirmed Cases: ", ctx.brief == null ? null : ctx.brief.confirmed, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Deaths: ", ctx.brief == null ? null : ctx.brief.deaths, "");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Recovered: ", ctx.brief == null ? null : ctx.brief.recovered, "");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", ctx.valueTree);
-    } }, directives: [primeng_treetable__WEBPACK_IMPORTED_MODULE_2__["TreeTable"], primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterOutlet"], primeng_treetable__WEBPACK_IMPORTED_MODULE_2__["TreeTableToggler"]], styles: [".node-list[_ngcontent-%COMP%] {\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXENvcm9uYUFwcFxcY29yb25hLWxpdmUvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5vZGUtbGlzdCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxufVxyXG4iLCIubm9kZS1saXN0IHtcbiAgZGlzcGxheTogZmxleDtcbn0iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", ctx.valueTree)("selection", ctx.selectedNode)("autoLayout", true)("scrollable", true);
+    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTable"], primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TTSelectableRow"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTableToggler"]], styles: [".node-list[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%]   .plot[_ngcontent-%COMP%] {\n  flex-grow: 1;\n  margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hdGlsbGFiYXNwaW5hci9EZXNrdG9wL0Nvcm9uYS9jb3JvbmEtbGl2ZS1jb2RlL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0FDQ0Y7O0FER0E7RUFDRSxhQUFBO0FDQUY7O0FEQ0U7RUFDRSxZQUFBO0VBQ0EsaUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlLWxpc3Qge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcblxyXG4uZmlyc3Qtcm93IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC5wbG90IHtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG4gIH1cclxufSIsIi5ub2RlLWxpc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uZmlyc3Qtcm93IHtcbiAgZGlzcGxheTogZmxleDtcbn1cbi5maXJzdC1yb3cgLnBsb3Qge1xuICBmbGV4LWdyb3c6IDE7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -381,8 +495,11 @@ class CoronaApiService {
         });
     }
     // /jhu-edu/timeseries
-    timeseries() {
-        const path = '/jhu-edu/timeseries';
+    timeseries(code) {
+        let path = '/jhu-edu/timeseries';
+        if (code) {
+            path = `/jhu-edu/timeseries?iso2=${code}&onlyCountries=true`;
+        }
         return this.http.get(`${this.server}${path} `, {
             headers: {
                 accept: 'application/json'
@@ -463,7 +580,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\CoronaApp\corona-live\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/atillabaspinar/Desktop/Corona/corona-live-code/src/main.ts */"./src/main.ts");
 
 
 /***/ })
