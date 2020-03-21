@@ -154,6 +154,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var primeng_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! primeng/api */
     "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-api.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+    /* harmony import */
+
+
+    var primeng_progressspinner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! primeng/progressspinner */
+    "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-progressspinner.js");
 
     function AppComponent_ng_template_22_Template(rf, ctx) {
       if (rf & 1) {
@@ -207,11 +219,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function AppComponent_ng_template_23_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 14);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "p-treeTableToggler", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "p-treeTableToggler", 15);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
 
@@ -257,42 +269,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var rowNode_r2 = ctx.$implicit;
-        var rowData_r3 = ctx.rowData;
+        var rowNode_r3 = ctx.$implicit;
+        var rowData_r4 = ctx.rowData;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ttSelectableRow", rowNode_r2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ttSelectableRow", rowNode_r3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("rowNode", rowNode_r2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("rowNode", rowNode_r3);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", rowData_r3.countryregion, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", rowData_r4.countryregion, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.confirmed);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.confirmed);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.recovered);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.recovered);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.deaths);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.deaths);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.confirmed - (rowData_r3.prev == null ? null : rowData_r3.prev.confirmed));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.confirmed - (rowData_r4.prev == null ? null : rowData_r4.prev.confirmed));
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.recovered - (rowData_r3.prev == null ? null : rowData_r3.prev.recovered));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.recovered - (rowData_r4.prev == null ? null : rowData_r4.prev.recovered));
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r3.deaths - (rowData_r3.prev == null ? null : rowData_r3.prev.deaths));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](rowData_r4.deaths - (rowData_r4.prev == null ? null : rowData_r4.prev.deaths));
+      }
+    }
+
+    function AppComponent_p_progressSpinner_24_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "p-progressSpinner", 16);
       }
     } // export interface TreeNode {
     //   data?: any;
@@ -322,6 +340,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           expanded: true
         }];
         this.sample = [];
+        this.loading = false;
       }
 
       _createClass(AppComponent, [{
@@ -375,6 +394,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
           var prev = [];
           this.coronaApi.timeseries().subscribe(function (result) {
+            _this.loading = true;
             prev = result.map(function (country) {
               var lastDate = 0;
               var prevDate = 0;
@@ -460,6 +480,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
               _this.valueTree = _this.valueTree[0].children;
             });
+
+            _this.loading = false;
           });
         }
       }, {
@@ -535,9 +557,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 24,
-      vars: 7,
-      consts: [[1, "container-fluid", "bg-dark"], [1, "row"], [1, "col-12", "mb-2"], [1, "first-row"], [1, "card"], [1, "card-header", "bg-dark", "text-light"], [1, "card-body"], [1, "card-subtitle", "mb-2"], [1, "card", "plot"], ["id", "history-plot"], ["selectionMode", "single", "dataKey", "countryregion", "scrollHeight", "600px", 3, "value", "selection", "autoLayout", "scrollable", "selectionChange", "onNodeSelect", "onNodeUnselect"], ["pTemplate", "header"], ["pTemplate", "body"], [3, "ttSelectableRow"], [3, "rowNode"]],
+      decls: 25,
+      vars: 8,
+      consts: [[1, "container-fluid", "bg-dark"], [1, "row"], [1, "col-12", "mb-2"], [1, "first-row"], [1, "card"], [1, "card-header", "bg-dark", "text-light"], [1, "card-body"], [1, "card-subtitle", "mb-2"], [1, "card", "plot"], ["id", "history-plot"], ["selectionMode", "single", "dataKey", "countryregion", "scrollHeight", "600px", 3, "value", "selection", "autoLayout", "scrollable", "selectionChange", "onNodeSelect", "onNodeUnselect"], ["pTemplate", "header"], ["pTemplate", "body"], ["style", "z-index: 1;top: calc(50% - 50px);left: calc(50% - 50px);position: fixed;", "styleClass", "progress-spinner", 4, "ngIf"], [3, "ttSelectableRow"], [3, "rowNode"], ["styleClass", "progress-spinner", 2, "z-index", "1", "top", "calc(50% - 50px)", "left", "calc(50% - 50px)", "position", "fixed"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -625,6 +647,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, AppComponent_p_progressSpinner_24_Template, 1, 0, "p-progressSpinner", 13);
         }
 
         if (rf & 2) {
@@ -643,10 +667,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", ctx.valueTree)("selection", ctx.selectedNode)("autoLayout", true)("scrollable", true);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.loading);
         }
       },
-      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTable"], primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TTSelectableRow"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTableToggler"]],
-      styles: [".node-list[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%]   .plot[_ngcontent-%COMP%] {\n  flex-grow: 1;\n  margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hdGlsbGFiYXNwaW5hci9EZXNrdG9wL0Nvcm9uYS9jb3JvbmEtbGl2ZS1jb2RlL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0FDQ0Y7O0FER0E7RUFDRSxhQUFBO0FDQUY7O0FEQ0U7RUFDRSxZQUFBO0VBQ0EsaUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlLWxpc3Qge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcblxyXG4uZmlyc3Qtcm93IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC5wbG90IHtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG4gIH1cclxufSIsIi5ub2RlLWxpc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uZmlyc3Qtcm93IHtcbiAgZGlzcGxheTogZmxleDtcbn1cbi5maXJzdC1yb3cgLnBsb3Qge1xuICBmbGV4LWdyb3c6IDE7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */"]
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTable"], primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TTSelectableRow"], primeng_treetable__WEBPACK_IMPORTED_MODULE_3__["TreeTableToggler"], primeng_progressspinner__WEBPACK_IMPORTED_MODULE_6__["ProgressSpinner"]],
+      styles: [".node-list[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.first-row[_ngcontent-%COMP%]   .plot[_ngcontent-%COMP%] {\n  flex-grow: 1;\n  margin-left: 10px;\n}\n\n[_ngcontent-%COMP%]:ng-root   .progress-spinner[_ngcontent-%COMP%] {\n  position: fixed;\n  z-index: 1;\n  top: 50%;\n  left: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hdGlsbGFiYXNwaW5hci9EZXNrdG9wL0Nvcm9uYS9jb3JvbmEtbGl2ZS1jb2RlL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0FDQ0Y7O0FER0E7RUFDRSxhQUFBO0FDQUY7O0FEQ0U7RUFDRSxZQUFBO0VBQ0EsaUJBQUE7QUNDSjs7QURHQTtFQUNFLGVBQUE7RUFDQSxVQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7QUNBRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ub2RlLWxpc3Qge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcblxyXG4uZmlyc3Qtcm93IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC5wbG90IHtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG4gIH1cclxufVxyXG5cclxuOm5nLXJvb3QgLnByb2dyZXNzLXNwaW5uZXIge1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICB6LWluZGV4OiAxO1xyXG4gIHRvcDogNTAlO1xyXG4gIGxlZnQ6IDUwJTtcclxufSIsIi5ub2RlLWxpc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uZmlyc3Qtcm93IHtcbiAgZGlzcGxheTogZmxleDtcbn1cbi5maXJzdC1yb3cgLnBsb3Qge1xuICBmbGV4LWdyb3c6IDE7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufVxuXG46bmctcm9vdCAucHJvZ3Jlc3Mtc3Bpbm5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgei1pbmRleDogMTtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDUwJTtcbn0iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -729,6 +757,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var primeng_tree__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! primeng/tree */
     "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-tree.js");
+    /* harmony import */
+
+
+    var primeng_progressspinner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! primeng/progressspinner */
+    "./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-progressspinner.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -743,13 +777,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         return new (t || AppModule)();
       },
       providers: [],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"]]]
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"], primeng_progressspinner__WEBPACK_IMPORTED_MODULE_7__["ProgressSpinnerModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"]]
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"], primeng_progressspinner__WEBPACK_IMPORTED_MODULE_7__["ProgressSpinnerModule"]]
       });
     })();
     /*@__PURE__*/
@@ -760,7 +794,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"]],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], primeng_treetable__WEBPACK_IMPORTED_MODULE_5__["TreeTableModule"], primeng_tree__WEBPACK_IMPORTED_MODULE_6__["TreeModule"], primeng_progressspinner__WEBPACK_IMPORTED_MODULE_7__["ProgressSpinnerModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         }]
